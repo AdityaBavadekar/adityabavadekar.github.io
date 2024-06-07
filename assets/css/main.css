@@ -234,7 +234,6 @@ a:hover {
 .dark-theme .dark-icon {
     position: absolute;
     visibility: hidden;
-    transform: rotate(20deg);
     opacity: 0;
 }
 
