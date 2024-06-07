@@ -4,53 +4,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My GitHub Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <!-- REMIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My GitHub Page</h1>
-    </header>
+    <div id="content">
 
-    <main>
+        <header class="header">
+            <nav class="navbar container">
 
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I'm <b>Aditya Bavadekar</b>, CSE Student from India. Always intrested in new technology.</p>
-        
-            <h2>Intrests</h2>
-            <p>Kotlin, Android, Python, C++, App Development, Leetcode solving</p>
-        
-        
-            <h2>Education</h2>
-            <p>B.Tech. in Computer Science & Engineering with specilization in Artificial Inteligence & Machine Learning (Ongoing)</p>
-        
-            <div>
-                <h2>Projects</h2>
-                <section>
-                    <h4>Messenger</h4>
+                <p class="logo">Aditya Bavadekar</p>
+                
+                <div>
+                    <button id="theme-toggle-btn" class="menu-btn">
+                        <div class="light-icon icon-holder" id="light-icon">
+                            <i class="ri-sun-line icon"></i>
+                            <span class="tooltip">
+                                Switch to Light mode
+                            </span>
+                        </div>
+                        <div class="dark-icon icon-holder" id="dark-icon">
+                            <i class="ri-moon-line icon"></i>
+                            <span class="tooltip">
+                                Switch to Dark mode
+                            </span>
+                        </div>
+                    </button>
+<!-- 
+                    <button id="open-menu-btn" class="menu-btn">
+                        <div class="open-icon icon-holder" id="light-icon">
+                            <i class="ri-menu-line icon"></i>
+                            <span class="tooltip">
+                                Open menu
+                            </span>
+                        </div>
+                    </button> -->
+                </div>
+                    
+                <div class="menu">
+
+                    <ul class="menu-list">
+                        <li class="menu-list-item">
+                            <a class="menu-link" id="menu-link">
+                                About Me
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" id="menu-link">
+                                Intrests
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" id="menu-link">
+                                Education
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" id="menu-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-link" id="menu-link">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="close-icon icon-holder" id="close-icon">
+                        <i class="ri-close-line icon"></i>
+                        <span class="tooltip">
+                            Close
+                        </span>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <div class="header-space"></div>
+        <main>
+
+            <!-- <div class="display">
+                <h1>Heading 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h1>
+                <p>Hello</p>
+                <h2>Heading 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h2>
+                <p>Hello</p>
+                <h3>Heading 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+                <p>Hello</p>
+                <h4>Heading 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+                <p>Hello</p>
+                <h5>Heading 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
+                <p>Hello</p>
+                <h6>Heading 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
+                <p>Hello</p>
+            </div> -->
+
+
+
+            <div class="main-header">
+                <h1 class="section-header">Welcome to My GitHub Page</h1>
+            </div>
+            
+            <div class="section" id="about-me">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="section-content">
+                    <p>Hello! I'm <b>Aditya Bavadekar</b>, CSE Student from India. Always intrested in new technology.</p>
+                </div>
+            </div>
+            
+            <div class="section" id="intrests">
+                <div class="section-header">
+                    <h2>Intrests</h2>
+                </div>
+                <div class="section-content">
+                    <p>Kotlin, Android, Python, C++, App Development, Leetcode solving</p>
+                </div>
+            </div>
+
+            <div class="section" id="education">
+                <div class="section-header">
+                    <h2>Education</h2>
+                </div>
+                <h2 class="section-header"></h2>
+                <div class="section-content">
+                    <p>B.Tech. in Computer Science & Engineering (Ongoing)</p>
+                </div>
+            </div>
+
+            <div class="section" id="projects">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                </div>
+                <div class="section-content">
+                    <p class="section-content-header">Messenger</p>
                     <p>
                         - A simple, private, and secure messenger for Android.
                     </p>
-                    <h4>AndroidProjectGenerator</h4>
+                    <p class="section-content-header">AndroidProjectGenerator</p>
                     <p>
-                         - Python script that generates an Android project provided some information.
+                            - Python script that generates an Android project provided some information.
                     </p>
-                    <h4>PinLog</h4>
+                    <p class="section-content-header">PinLog</p>
                     <p>
-                         - An easy-to-use and powerful Android logging library. It supports storing logs for later retrieval, saving logs in a file, and saving logs in a zip file.
+                            - An easy-to-use and powerful Android logging library. It supports storing logs for later retrieval, saving logs in a file, and saving logs in a zip file.
                     </p>
                 </section>
             </div>
-        
-            <div>
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out to me via email for any inquiries or collaborations. You can find me at <a href="mailto:adityarbavadekar@gmail.com">adityarbavadekar@gmail.com</a></p>
+            
+            <div class="section">
+                <div class="section-header">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="section-content">
+                    <p>Feel free to reach out to me via email for any inquiries or collaborations. You can find me at <a href="mailto:adityarbavadekar@gmail.com">adityarbavadekar@gmail.com</a></p>
+                </div>
             </div>
 
-        </section>
+        </main>
 
-</section>
-</main>
+        <footer class="footer">
+            <div class="divider"></div>
+            <div class="footer-container">
+
+                <p class="logo">Aditya Bavadekar</p>
+
+                <div class="social-media-container">
+                    <ul class="social-media-list">
+                        <li class="social-media-item">
+                            <a href="https://github.com/AdityaBavadekar" target="_blank" class="social-media-link">
+                                <i class="ri-github-fill footer-icon"></i>
+                                <span class="social-media-tooltip">
+                                    Github
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social-media-item">
+                            <a href="#" target="_blank" class="social-media-link">
+                                <i class="ri-twitter-fill footer-icon"></i>
+                                <span class="social-media-tooltip">
+                                    Twitter
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social-media-item">
+                            <a href="#" target="_blank" class="social-media-link">
+                                <i class="ri-facebook-fill footer-icon"></i>
+                                <span class="social-media-tooltip">
+                                    Facebook
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social-media-item">
+                            <a href="#" target="_blank" class="social-media-link">
+                                <i class="ri-telegram-fill footer-icon"></i>
+                                <span class="social-media-tooltip">
+                                    Telegram
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social-media-item">
+                            <a href="#" target="_blank" class="social-media-link">
+                                <i class="ri-linkedin-fill footer-icon"></i>
+                                <span class="social-media-tooltip">
+                                    LinkedIn
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social-media-item">
+                            <a href="#" target="_blank" class="social-media-link">
+                                <i class="ri-youtube-fill footer-icon"></i>
+                                <span class="social-media-tooltip">
+                                    YouTube
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social-media-item">
+                            <a href="#" target="_blank" class="social-media-link">
+                                <i class="ri-instagram-fill footer-icon"></i>
+                                <span class="social-media-tooltip">
+                                    Instagram
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <p class="copyright-notice">
+                    Copyright &copy; 2024 Aditya Bavadekar. All rights reserved.
+                </p>
+
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
