@@ -1,10 +1,5 @@
-const lightIcon = document.getElementById('light-icon');
-const darkIcon = document.getElementById('dark-icon');
+const themeToggleButton = document.getElementById('theme-toggle-btn');
 
-lightIcon.addEventListener('click', () => {
-    document.body.classList.remove('dark-theme')
-});
-
-darkIcon.addEventListener('click', () => {
-    document.body.classList.add('dark-theme')
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme')
 });
