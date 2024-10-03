@@ -10,13 +10,14 @@
     --transparent-light-color: rgba(127, 110, 110, 0.3);
     --transparent-dark-color: rgba(0, 0, 0, 0.6);
     --opposite-text-color: white;
+    --color-link: blue;
 
     --light-divider-color: rgba(128, 128, 128, 0.4);
 
     --header-background-color: white;
     --transparent-header-color: rgba(255, 255, 255, 0.0);
     --primary-header-trans-color: rgba(20, 20, 227, 0.831);
-
+    --section-content-color: rgba(201, 196, 196, 0.333);
 
     /* Sizes */
     --radius-default: 4px;
@@ -83,6 +84,8 @@ body.dark-theme{
     
     /* COLORS - Dark Theme */
 
+    --color-link: rgb(164, 164, 255);
+
     --background-color: black;
     --text-color: white;
     
@@ -94,6 +97,7 @@ body.dark-theme{
     --opposite-text-color: black;
 
     --light-divider-color: rgba(128, 128, 128, 0.4);
+    --section-content-color: rgba(100, 100, 100, 0.4);
 
     --header-background-color: black;
     --transparent-header-color: rgba(255, 255, 255, 0.0);
@@ -147,6 +151,7 @@ ul {
 }
 
 a {
+    color: var(--color-link);
     text-decoration: none;
     transition: font-weight .1s;
 }
@@ -188,7 +193,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1rem;
-    border: solid 1px var(--light-divider-color);
+    border-bottom: solid 1px var(--light-divider-color);
 }
 
 .tooltip {
@@ -302,7 +307,7 @@ main {
 }
 
 .section-content {
-    background-color: rgba(201, 196, 196, 0.333);
+    background-color: var(--section-content-color);
     border-radius: var(--radius-default);
     padding: 18px;
 }
